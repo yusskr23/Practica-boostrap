@@ -8,30 +8,63 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-4 bg-danger text-white text-center">
+        <h1>Mi primera pagina web bootstrap</h1>
+        <p>El imperio Otomano</p> 
+      </div>
+        
+      <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-1 col-lg-2 bg-success">1</div>
-            <div class="col-sm-2 col-lg-4 bg-info">2</div>
-            <div class="col-sm-5 col-lg-1 bg-danger">3</div>
-            <div class="col-sm-2 col-lg-2 bg-light">4</div>
-            <div class="col-sm-2 col-lg-3 bg-warning">5</div>
+          <div class="col-sm-4">
+            <h3>Osmán I</h3>
+            <p>Osmán I, también conocido como Osmán Gazi (en torno a 1258 - en torno a 1323), fue el fundador y primer sultán del Beilicato otomano, el cuál con el paso del tiempo llegaría a convertirse en el Imperio otomano. Osmán fue el gobernante de uno de los muchos y pequeños principados turcos de la región de Bitinia, en la península de Anatolia. Por medio de una serie de victorias sobre el Imperio bizantino sentaría las bases para que sus descendientes construyeran un imperio que se extendería por tres continentes y varios siglos para dejar su influencia en Oriente Próximo, los Balcanes y el mundo.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Osman_Gazi2.jpg/320px-Osman_Gazi2.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="400">
+          </div>
+          <div class="col-sm-4">
+            <h3>Mehmed II</h3>
+            <p>Mehmed II (1432-1481), también conocido como Mehmed el Conquistador, fue el séptimo sultán del Imperio otomano y uno de sus mayores líderes. Sus conquistas consolidaron el dominio otomano sobre los Balcanes. Su triunfo más famoso fue la captura de la codiciada ciudad de Constantinopla, a la que convirtió en centro administrativo, enclave cultural y capital de su creciente imperio. Sus victorias marcarían el fin del Imperio bizantino y marcarían el comienzo de una nueva era de dominio otomano en el Mediterráneo oriental.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gentile_Bellini_003.jpg/200px-Gentile_Bellini_003.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="400">
+          </div>
+          <div class="col-sm-4">
+            <h3>Solimán el Magnífico</h3>        
+            <p>Solimán el Magnífico (también Süleyman I o Solimán I) fue el décimo sultán del Imperio Otomano y el de más largo reinado: de 1520 a 1566. Considerado durante su vida como un hábil comandante militar, un gobernante justo y un monarca ungido por Dios, su reino se extendió desde Hungría hasta Irán y desde Crimea hasta el norte de África y el Océano Índico. Mientras mantenía ásperas rivalidades con los Habsburgo católicos y los safávidas chiítas, gobernó un imperio multilingüe y multirreligioso que prometía paz y prosperidad a sus súbditos.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EmperorSuleiman.jpg/320px-EmperorSuleiman.jpg" class="rounded-circle" alt="Cinque Terre" width="300" height="400">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+            <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
         
-        <hr>
-        <div class="row">
-            <div class="col-sm-3 col-lg-3 bg-info">1</div>
-            <div class="col-sm-4 col-lg-4 bg-success">2</div>
-            <div class="col-sm-2 col-lg-2 bg-primary">3</div>
-            <div class="col-sm-3 col-lg-3 bg-danger">4</div>
-            
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./IMG/mezquitareayasofya.webp" alt="mezquita Aya Sofya" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/mapaimperiotomano.png" alt="mapaimperiotomano" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/cuadroturquia.jpg" alt="Cuadro" class="d-block" style="width:100%">
+          </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3 col-lg-3 bg-info">1</div>
-            <div class="col-sm-4 col-lg-4 bg-success">2</div>
-            <div class="col-sm-2 col-lg-2 bg-primary">3</div>
-            <div class="col-sm-3 col-lg-3 bg-danger">4</div>
-            
-        </div>
-    </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
 </body>
 </html>
